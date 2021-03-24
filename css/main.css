@@ -89,7 +89,7 @@ textarea {
 
 #board {
   display: inline;
-  background-color: #aaaaaa;
+  background-color: #ffffff;
 }
 
 .cell {
@@ -118,8 +118,7 @@ textarea {
   */
 
 .bodySnake {
-  background-color: red;
-  border-radius: 50%;
+  background-color: rgb(0, 255, 191);
 }
 
 .food {

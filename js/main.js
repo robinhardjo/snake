@@ -1,4 +1,4 @@
-let boardSize = 10;
+let boardSize = 8;
 let board = document.getElementById("board");
 let keyboardInput = document.getElementById("keyboardInput");
 //let direction = [0,0]; //alternatief
@@ -161,6 +161,22 @@ window.addEventListener("keydown", function (event) {
         direction = 3;
     }
     if (event.key == "ArrowLeft") {
+        //direction = [-1,0]; //alternatief
+        direction = 4;
+        
+    }if (event.key == "w") {
+        //direction = [0,-1]; //alternatief
+        direction = 1;
+    }
+    if (event.key == "s") {
+        //direction = [0,1]; //alternatief
+        direction = 2;
+    }
+    if (event.key == "d") {
+        //direction = [1,0]; //alternatief
+        direction = 3;
+    }
+    if (event.key == "a") {
         //direction = [-1,0]; //alternatief
         direction = 4;
     }
