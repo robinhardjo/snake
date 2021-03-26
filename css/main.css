@@ -92,6 +92,10 @@ textarea {
   background-color: #aaaaaa;
 }
 
+.center {
+  
+}
+
 .cell {
   width: 20px;
   height: 20px;
@@ -99,11 +103,26 @@ textarea {
   background-color: #aaaaaa;
   display: inline;
   float: left;
-  font-size: 0px;
+  font-size: 8px;
 }
 
+/*
+  #x11y11{
+    background: green;
+  }
+  #x10y10{
+    background: yellow;
+  }
+  #x12y0{
+    background: blue;
+  }
+  #x12y12{
+    background: black;
+  }
+  */
+
 .bodySnake {
-  background-color: rgb(0, 255, 234);
+  background-color: red;
   border-radius: 50%;
 }
 
@@ -111,17 +130,17 @@ textarea {
     background-color:  rgba(0,0,0,0);
     border-radius: 50%;
     border: none;
-    /* background-image: url(../img/snake_head.png);
+    background-image: url('../img/snake_head.png');
     background-size: contain;
-  } */
-
-.bodyTail {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  border: none;
-  /*background-image: url(../img/snake_head.png);*/
-  background-size: contain;
-}
+  }
+  
+  .bodyTail{
+    background-color:  rgba(0,0,0,0);
+    border-radius: 50%;
+    border: none;
+    /*background-image: url(../img/snake_head.png);*/
+/* background-size: contain; */
+/* } */
 
 .bodyHeadDirection1 {
   transform: rotate(180deg);
@@ -137,10 +156,15 @@ textarea {
 }
 
 .food {
-  background-color:  rgb(247, 0, 255);
-  /* background-image: url("../img/jerrycan.png"); */
-  /* border-radius: 50%; */
+  background-color: blue;
+  border-radius: 50%;
 }
+
+/*
+  #x4y6{
+    background-color:  red;
+  }
+  */
 
 /* ==========================================================================
      Helper classes
