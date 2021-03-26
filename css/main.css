@@ -93,7 +93,7 @@ textarea {
 }
 
 .center {
-  
+
 }
 
 .cell {
@@ -106,31 +106,16 @@ textarea {
   font-size: 8px;
 }
 
-/*
-  #x11y11{
-    background: green;
-  }
-  #x10y10{
-    background: yellow;
-  }
-  #x12y0{
-    background: blue;
-  }
-  #x12y12{
-    background: black;
-  }
-  */
-
 .bodySnake {
   background-color: red;
   border-radius: 50%;
 }
 
-/* .bodyHead{
+.bodyHead{
     background-color:  rgba(0,0,0,0);
     border-radius: 50%;
     border: none;
-    background-image: url('../img/snake_head.png');
+    background-image: url('../img/auto.png');
     background-size: contain;
   }
   
@@ -139,8 +124,8 @@ textarea {
     border-radius: 50%;
     border: none;
     /*background-image: url(../img/snake_head.png);*/
-/* background-size: contain; */
-/* } */
+background-size: contain;
+}
 
 .bodyHeadDirection1 {
   transform: rotate(180deg);
@@ -156,15 +141,9 @@ textarea {
 }
 
 .food {
-  background-color: blue;
-  border-radius: 50%;
+  background-image: url('../img/jerrycan.png');
+  background-size: contain;
 }
-
-/*
-  #x4y6{
-    background-color:  red;
-  }
-  */
 
 /* ==========================================================================
      Helper classes
