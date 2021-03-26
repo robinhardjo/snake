@@ -32,17 +32,6 @@ function drawBoard() {
 }
 
 function clearBoard() {
-    //clearBoard (maak het bord leeg door de class van alle blokjes terug te zetten naar cell)
-    /*
-    for (let j = 0; j < boardSize; j++) {
-        for (let i = 0; i < boardSize; i++) {
-            let snakeId = "x" + i + "y" + j;
-            document.getElementById(snakeId).className = "cell";
-        }
-    }
-    */
-
-    // bovenstaande kan met minder code door dit te doen....
     document.querySelectorAll('.cell').forEach(function (cell) {
         cell.className = "cell";
     });
@@ -52,9 +41,6 @@ function clearBoard() {
 //updatesnakePosition
 
 function updatesnakePosition() {
-
-    //snakePosition.y += direction[1]; //alternatief
-    //snakePosition.x += direction[0]; //alternatief   
 
     if (direction == 1) {
         snakePosition.y = snakePosition.y - 1;
@@ -151,10 +137,8 @@ function drawFood() {
 
 function snakeEatsFood() {
     if (snakePosition.x == foodPosition.x && snakePosition.y == foodPosition.y) {
-        //console.log("Yummy!!!!!!");
         foodIsEaten = true;
         snakePositions.push("x" + snakePosition.x + "y" + snakePosition.y);
-        //console.log(snakePositions);
     }
 }
 
@@ -183,13 +167,6 @@ function gameLoop() {
 //start Game here......
 
 drawBoard();
-
-// setInterVal werkt niet als je de slang sneller wilt laten gaan...
-//setInterval(gameLoop, 550-snakePositions.length*100);//500 450 400 350 300
-
-//
-// TODO: werk met window.requestAnimationFrame i.p.v. setInterval
-//
 
 setTimeout(gameLoop, 0);
 
@@ -221,8 +198,30 @@ window.addEventListener("keydown", function (event) {
             direction = 4;
         }
 
-    }
+        if (event.key == "w") {
+            //direction = [0,-1]; //alternatief
+            if (direction != 2) {
+                direction = 1;
+            }
+        }
+        if (event.key == "s") {
+            //direction = [0,1]; //alternatief
+            if (direction != 1) {
+                direction = 2;
+            }
+        }
+        if (event.key == "d") {
+            //direction = [1,0]; //alternatief
+            if (direction != 4) {
+                direction = 3;
+            }
+        }
+        if (event.key == "a") {
+            //direction = [-1,0]; //alternatief
+            if (direction != 3) {
+                direction = 4;
+            }
+        }
 
-    // TODO: voeg WASD toe (voor de echte gamers onder ons....)
-    keyboardInput.innerHTML = "direction:" + direction;
+    }
 }, true);
