@@ -100,22 +100,20 @@ textarea {
   width: 20px;
   height: 20px;
   border: 1px solid black;
-  background-color: #aaaaaa;
+  background-color: #ffffff;
   display: inline;
   float: left;
-  font-size: 8px;
+  font-size: 0px;
 }
 
 .bodySnake {
-  background-color: red;
-  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
 }
 
 .bodyHead{
     background-color:  rgba(0,0,0,0);
-    border-radius: 50%;
     border: none;
-    background-image: url('../img/auto.png');
+    background-image: url('../img/auto_voorkant.png');
     background-size: contain;
   }
   
