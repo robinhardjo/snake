@@ -1,4 +1,4 @@
-let boardSize = 8;
+let boardSize = 20;
 let board = document.getElementById("board");
 let keyboardInput = document.getElementById("keyboardInput");
 //let direction = [0,0]; //alternatief
